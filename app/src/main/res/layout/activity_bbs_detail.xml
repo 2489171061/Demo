@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_e"
+    tools:context=".activity.BbsDetailActivity">
+
+    <!-- title -->
+    <com.lei.bbs.util.MyToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.lei.bbs.util.MyToolBar>
+
+    <!-- content -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+
+        android:layout_below="@+id/toolbar">
+      <!--  android:orientation="vertical"-->
+
+       <!-- <LinearLayout
+            android:id="@+id/llListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/white">-->
+            <ListView
+                android:id="@+id/lvDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        <!--</LinearLayout>-->
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!-- bottom -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_c"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="9"
+                android:minLines="1"
+                android:padding="5dp"
+                android:background="@drawable/et_border"
+                android:textColorHint="@color/gray_c"
+                android:hint="  Reply to the landlord"/>
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_answer_selector"
+                android:textColor="@color/gray_a"
+                android:text="Send"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

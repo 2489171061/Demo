@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/left_bg">
+
+    <!-- head -->
+    <RelativeLayout
+        android:id="@+id/rlHeadContent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/right_white"/>
+
+        <com.lei.bbs.util.CircleImage
+            android:id="@+id/imgHead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:src="@mipmap/head"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgHead"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="name"/>
+
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgHead"
+            android:layout_below="@+id/tvName"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="LV.2"/>
+
+        <ImageView
+            android:id="@+id/imgSex"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvLevel"
+            android:src="@mipmap/girl"
+            android:layout_below="@+id/tvName"/>
+
+        <TextView
+            android:id="@+id/tvSex"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/imgSex"
+            android:layout_below="@+id/tvName"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeadContent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:text="Login"/>
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Map"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Virtual currency"/>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Log out"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

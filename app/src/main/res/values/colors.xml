@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FE6703</color>
+    <color name="colorPrimaryDark">#FE6703</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_d">#dddddd</color>
+    <color name="title_blue">#FE6703</color>
+    <color name="little_green">#2BD56F</color>
+    <color name="left_bg">#FE6703</color>
+    <color name="recyclercolor">#ffdd34</color>
+    <color name="searchBackGroundColor">#FFE794</color>
+    <color name="underlinecolor2">#c3c3c3</color>
+
+    <color name="btn_focus">#FE6703</color>
+    <color name="btn_normal">#FE6703</color>
+    <color name="gray_e">#eeeeee</color>
+    <color name="transparent">#000000</color>
+    <color name="gray_divider">#EDEDED</color>
+    <color name="gray_c">#cccccc</color>
+    <color name="gray_a">#aaaaaa</color>
+    <color name="bg_gray">#eeeeee</color>
+
+</resources>

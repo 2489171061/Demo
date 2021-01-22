@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <!--  top  -->
+        <RelativeLayout
+            android:id="@+id/rlTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <com.lei.bbs.util.CircleImage
+                android:id="@+id/imgHead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/head"/>
+
+            <RelativeLayout
+                android:id="@+id/rlTopFloor"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgHead">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textSize="16sp"
+                    android:text="@string/name"/>
+                <TextView
+                    android:id="@+id/tvLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:layout_toRightOf="@id/tvName"
+                    android:textColor="@color/white"
+                    android:background="@color/little_green"
+                    android:textSize="12sp"
+                    android:text="lv.1"/>
+                <ImageView
+                    android:id="@+id/imgSex"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tvLevel"
+                    android:src="@mipmap/boy"/>
+                <TextView
+                    android:id="@+id/tvTopFloor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:layout_toRightOf="@id/imgSex"
+                    android:textColor="@color/white"
+                    android:background="@color/title_blue"
+                    android:textSize="12sp"
+                    android:text="Landlord"/>
+                <ImageButton
+                    android:id="@+id/imgBtnAnswer"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/message"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/imgHead"
+                android:layout_below="@+id/rlTopFloor"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFloorNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginRight="5dp"
+                    android:text="floor"/>
+
+                <TextView
+                    android:id="@+id/tvSendTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="sendTime"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- title -->
+        <LinearLayout
+            android:id="@+id/llMainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="mainTitle"/>
+        </LinearLayout>
+
+        <!-- content -->
+        <LinearLayout
+            android:id="@+id/llMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvMainContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="mainContent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- child listView -->
+    <LinearLayout
+        android:id="@+id/llTalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/gray_divider"/>
+
+        <com.lei.bbs.util.ListLinearLayout
+            android:id="@+id/listLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.lei.bbs.util.ListLinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

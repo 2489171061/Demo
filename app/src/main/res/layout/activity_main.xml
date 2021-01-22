@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.MainActivity">
+
+
+        <!-- main -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lei.bbs.util.MyToolBar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.lei.bbs.util.MyToolBar>
+
+            <!-- list view -->
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/srl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lvMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </ListView>
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <!-- left -->
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:background="@color/left_bg"
+            android:orientation="vertical"
+            android:layout_gravity="start">
+
+            <include layout="@layout/left_content"></include>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
